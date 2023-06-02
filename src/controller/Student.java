@@ -13,6 +13,7 @@ public class Student {
 		Class.forName("com.mysql.cj.jdbc.Driver");
 		Connection con= DriverManager.getConnection("jdbc:mysql://localhost:3306/Studentt","root","abc123");
 Statement st=con.createStatement();
+     //enter the proper table name in that stu V
 ResultSet rs = st.executeQuery("SELECT * FROM stu");
 while (rs.next()) {
 
